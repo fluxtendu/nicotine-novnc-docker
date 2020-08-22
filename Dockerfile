@@ -6,7 +6,7 @@ run apk update && apk upgrade && \
  apk add x11vnc novnc nicotine-plus --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ --allow-untrusted && \
  pip install mutagen && \
  mkdir -p /root/nicotine-downloads && \
- mkdir -p /root/nicotine-uploads && \
+ mkdir -p /root/nicotine-shares && \
  sed -i "s/scale', false/scale', true/" /usr/share/novnc/vnc_lite.html && \
  ln -s /root/nicotine-downloads /usr/share/novnc && \
  apk del build-dependencies && \
