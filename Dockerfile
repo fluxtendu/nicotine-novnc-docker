@@ -9,6 +9,7 @@ run apk update && apk upgrade && \
  mkdir -p /root/nicotine-shares && \
  sed -i "s/scale', false/scale', true/" /usr/share/novnc/vnc_lite.html && \
  ln -s /root/nicotine-downloads /usr/share/novnc && \
+ curl https://framalibre.org/sites/default/files/styles/thumbnail/public/leslogos/logonplus.png --output /usr/share/novnc/app/images/soulseek.png && \
  apk del build-dependencies && \
  rm -rf /var/cache/apk/*
 add etc /etc
